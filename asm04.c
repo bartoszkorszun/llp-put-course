@@ -8,7 +8,7 @@ int main04(void)
 	l1:
 		push cx
 		loop l1
-		mov cl,[esp+12]
+		mov cl,[esp+8]
 		mov c,cl
 		add esp,20
 	}

@@ -6,13 +6,13 @@ int main10(void)
 	{
 		movzx ecx,c
 	l1:
-		push cx
+		push ecx
 		call l2
 	l2:
 		loop l1
-		mov cl,[esp+22]
+		mov cl,[esp+16]
 		mov c,cl
-		add esp,60
+		add esp,80
 	}
 	printf("%d", c);
 	return 0;
